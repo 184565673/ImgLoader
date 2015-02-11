@@ -82,11 +82,11 @@ define('ImgLoader', function (require,exports,module) {
 	    					$(img).animate({opacity : 1}, 400);
 	    				} else {
 	    					img.onload = img.onerror = function() {
-		    				img.onload = img.onerror = null;
-		    				$(img).animate({opacity : 1}, 400);
-		    			}
-	    			}
-	    			break;
+			    				img.onload = img.onerror = null;
+			    				$(img).animate({opacity : 1}, 400);
+			    			}
+	    				}
+	    				break;
 	    		}
 	    		$(img).removeClass('lazy_img').attr('src', $(img).attr('_src')).removeAttr('_src');
 	    	
