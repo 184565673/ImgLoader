@@ -9,10 +9,10 @@ define('ImgLoader', function (require,exports,module) {
 	 */
 	function ImgLoader (options) {
 		this.settings = $.extend({
-							skip_invisible : true,   // {[boolean]} skip_invisible[可选，是否加载隐藏的图片]
-							threshold : 0,			 // {[number]} skip_invisible[可选，决定图片加载当距离可视区距离]	
-							showEffect : 'show'      // {[string]} showEffect[可选，图片显示时动画]
-						}, options);
+			skip_invisible : true,   // {[boolean]} skip_invisible[可选，是否加载隐藏的图片]
+			threshold : 0,			 // {[number]} skip_invisible[可选，决定图片加载当距离可视区距离]	
+			showEffect : 'show'      // {[string]} showEffect[可选，图片显示时动画]
+		}, options);
 	} 
 
 	ImgLoader.prototype = {
